@@ -100,13 +100,13 @@ const express=require('express');
 const app=express();
 app.use(express.json())
 
-// app.post("/",token,(req,res)=>{
-//     console.log("endpoint");
-//     console.log(req.body);
-//     res.send("home")
+app.post("/",token,(req,res)=>{
+    console.log("endpoint");
+    console.log(req.body);
+    res.send("home")
     
     
-// })
+})
 
 app.get("/data",(req,res)=>{
     // const{id}=req.params
